@@ -1,0 +1,71 @@
+{
+  "9x4": {
+    "title": "Como Encontrar a Elipse a Partir do Raio Maior",
+    "pages": [
+      "Page 1: Newton's First Law: An object in motion stays in motion unless acted upon by an external force.",
+      "Page 2: Example elements: Hydrogen (H), Oxygen (O), and Gold (Au).",
+      "Page 3: Page3",
+      "Page 4: P4",
+      "Page 5: p5",
+      "Page 6: p6",
+      "Page 7: Link do Material"
+    ]
+
+  },
+  "7x7": {
+    "title": "Math: Algebra Basics",
+    "pages": [
+      "Page 1: What is algebra? Algebra is the study of variables and their relationships.",
+      "Page 2: Example: Solve for x: 2x + 3 = 7. Solution: x = 2."
+    ]
+  },
+  "5x2": {
+    "title": "History: World War II",
+    "pages": [
+      "Page 1: World War II began in 1939 and ended in 1945.",
+      "Page 2: Key events: D-Day, Pearl Harbor, and the Holocaust."
+    ]
+  },
+  "5x5": {
+    "title": "Science: Photosynthesis",
+    "pages": [
+      "Page 1: Photosynthesis is the process by which plants convert sunlight into energy.",
+      "Page 2: The chemical equation for photosynthesis is: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂."
+    ]
+  },
+  "4x9": {
+    "title": "Literature: Shakespeare",
+    "pages": [
+      "Page 1: William Shakespeare was an English playwright and poet.",
+      "Page 2: Famous works: Hamlet, Romeo and Juliet, and Macbeth."
+    ]
+  },
+  "3x3": {
+    "title": "Geography: Continents",
+    "pages": [
+      "Page 1: There are 7 continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia.",
+      "Page 2: The largest continent is Asia, and the smallest is Australia."
+    ]
+  },
+  "2x0": {
+    "title": "Physics: Newton's Laws",
+    "pages": [
+      "Page 1: Newton's First Law: An object in motion stays in motion unless acted upon by an external force.",
+      "Page 2: Newton's Second Law: Force = mass × acceleration (F = ma)."
+    ]
+  },
+  "1x4": {
+    "title": "Biology: Human Body",
+    "pages": [
+      "Page 1: The human body has 11 major organ systems.",
+      "Page 2: Examples: Circulatory system, Nervous system, and Digestive system."
+    ]
+  },
+  "0x8": {
+    "title": "Chemistry: Periodic Table",
+    "pages": [
+      "Page 1: The periodic table organizes elements by atomic number and properties.",
+      "Page 2: Example elements: Hydrogen (H), Oxygen (O), and Gold (Au)."
+    ]
+  }
+}
