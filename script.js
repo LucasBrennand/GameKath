@@ -17,10 +17,21 @@ document.addEventListener("DOMContentLoaded", () => {
     "7x7": {
       title: "Math: Algebra Basics",
       pages: [
-        "Page 1: What is algebra? Algebra is the study of variables and their relationships.",
-        "Page 2: Example: Solve for x: 2x + 3 = 7. Solution: x = 2.",
+        "Como Encontrar a Elipse a Partir do Raio método de N pontos.",
+        "A elipse é uma figura geométrica que se assemelha a uma circunferência, mas que possui dois raios diferentes.",
+        "Passo 1: Ligar do Ponto A para os pontos 1 e 2 nos quadrantes 1º e 4º.",
+        "Passo 2: Ligar do Ponto B para os pontos 1 e 2 nos quadrantes 2º e 3º.",
+        "Passo 3: Ligar do Ponto A para os pontos 1 e 2 no eixo central.",
+        "Passo 4:Ligar do Ponto B para os pontos 1 e 2 no eixo central.",
+        "Passo 5: Marcar os pontos de interseção entre as linhas para construir a elipse.",
+        "Passo 6: Construir os arcos da elipse, passando pelos pontos médios e pelos pontos encontrados.",
+        "Passo 7: Construir os arcos da elipse passando pelos pontos médios e pontos encontrados.",
+        "A elipse está pronta!",
+        "Esse método permite construir uma elipse com precisão, utilizando um processo geométrico de interseção de pontos.",
+        "Link para o material de apoio: www.exemplo.com",
       ],
-    },
+    }
+,
     // Add the rest of your JSON data here...
   };
 
@@ -189,28 +200,33 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Handle tile clicks
-  function handleTileClick(tile) {
-    // Fetch the study data for the clicked tile
-    const studyKey = `${tile.row}x${tile.col}`;
-    const studyContent = studyData[studyKey];
+function handleTileClick(tile) {
+ 
 
-    if (studyContent) {
-      // Show the popup with the study material
-      showPopup(studyContent);
-    } else {
-      // Show a default message if no study data is available
-      showPopup({
-        title: "No Study Material",
-        pages: ["No content available for this tile."],
-      });
-    }
+  // Fetch the study data for the clicked tile
+  const studyKey = `${tile.row}x${tile.col}`;
+  const studyContent = studyData[studyKey];
 
-    // Highlight the path from the starting tile to the clicked tile
-    highlightPathToTile(tile);
+  if (studyContent) {
+    // Show the popup with the study material
+    showPopup(studyContent);
+  } else {
+    // Show a default message if no study data is available
+    showPopup({
+      title: "No Study Material",
+      pages: ["No content available for this tile."],
+    });
   }
+
+  // Highlight the path from the starting tile to the clicked tile
+  highlightPathToTile(tile);
+}
 
   // Show the popup with the study material
   function showPopup(studyContent) {
+     // Play the click sound
+  const clickSound = new Audio("click.mp3");
+  clickSound.play();
     // Ensure all elements exist before proceeding
     if (
       !popup ||
