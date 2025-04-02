@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "image": "./Images/5x2 passo 3.png"
           },
           {
-            "text": "Link para o material de apoio: www.exemplo.com",
+            "text": "Link para o material de apoio: https://www.geogebra.org/classic/qec98kgv",
             "image": "./Images/5x2 passo 3.png"
           }
         ]
