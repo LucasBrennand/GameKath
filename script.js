@@ -24,43 +24,43 @@ document.addEventListener("DOMContentLoaded", () => {
         "pages": [
           {
             "text": "Como Encontrar a Elipse a Partir do Raio Maior.",
-            "image": "./images/5x2 passo 1.png"
+            "image": "./Images/5x2 passo 1.png"
           },
           {
             "text": "A elipse é uma figura geométrica que se assemelha a uma circunferência, mas que possui dois raios diferentes.",
-            "image": "./images/5x2 passo 1.png"
+            "image": "./Images/5x2 passo 1.png"
           },
           {
             "text": "Passo 1: Identifique os quatro pontos médios das laterais do retângulo que servirá como referência para a elipse inscrita.",
-            "image": "./images/5x2 passo 1.png"
+            "image": "./Images/5x2 passo 1.png"
           },
           {
             "text": "Passo 2: Calcule R x 0,3 onde R é o raio maior da elipse.",
-            "image": "./images/5x2 passo 1.png"
+            "image": "./Images/5x2 passo 1.png"
           },
           {
             "text": "Passo 3: Trace uma reta paralela a partir do ponto de interseção do raio com a lateral do retângulo.",
-            "image": "./images/5x2 passo 1.png"
+            "image": "./Images/5x2 passo 1.png"
           },
           {
             "text": "Passo 4: Marque o ponto de interseção entre essa reta e a diagonal do retângulo.",
-            "image": "./images/5x2 passo 1.png"
+            "image": "./Images/5x2 passo 1.png"
           },
           {
             "text": "Passo 5: Marque os quatro pontos resultantes nas diagonais do retângulo.",
-            "image": "./images/5x2 passo 2.png"
+            "image": "./Images/5x2 passo 2.png"
           },
           {
             "text": "Passo 6: Desenhe a elipse passando pelos oito pontos encontrados (quatro pontos médios e quatro pontos diagonais), utilizando um compasso.",
-            "image": "./images/5x2 passo 3.png"
+            "image": "./Images/5x2 passo 3.png"
           },
           {
             "text": "A elipse está pronta!",
-            "image": "./images/5x2 passo 3.png"
+            "image": "./Images/5x2 passo 3.png"
           },
           {
             "text": "Link para o material de apoio: www.exemplo.com",
-            "image": "./images/5x2 passo 3.png"
+            "image": "./Images/5x2 passo 3.png"
           }
         ]
       },
@@ -69,37 +69,37 @@ document.addEventListener("DOMContentLoaded", () => {
         "pages": [
           {
             "text": "Cilindro é o objeto tridimensional delimitado pela superfície de translação completa de um segmento de reta que se move paralelamente a si mesmo, e se apoia em uma circunferência.",
-            "image": "./images/7x7 passo 1.png"
+            "image": "./Images/7x7 passo 1.png"
           },
           
           {
             "text": "Passo 1: Traçar as diagonais e os pontos médios de cada aresta da face.",
-            "image": "./images/7x7 passo 1.png"
+            "image": "./Images/7x7 passo 1.png"
           },
           {
             "text": "Passo 2: Escolher uma aresta para marcar R x 0,3.",
-            "image": "./images/7x7 passo 2.png"
+            "image": "./Images/7x7 passo 2.png"
           },
           {
             "text": "Passo 3: Traçar retas paralelas às arestas da face. Achar os pontos de interseção das diagonais.",
-            "image": "./images/7x7 passo 3.png"
+            "image": "./Images/7x7 passo 3.png"
           },
           {
             "text": "Passo 4: Traçar os arcos para representar a circunferência em perspectiva (elipse).",
-            "image": "./images/7x7 passo 4.png"
+            "image": "./Images/7x7 passo 4.png"
           },
           {
             "text": "Passo 5: Transpor os pontos da elipse, correspondentes a altura do cilindro, para fechar o sólido.",
-            "image": "./images/7x7 passo 5.png"
+            "image": "./Images/7x7 passo 5.png"
           },
           {
             "text": "Passo 6: Cilindro em perspectiva cavaleira. Esse método permite construir um cilindro com precisão, utilizando um processo geométrico de interseção de pontos.",
-            "image": "./images/7x7 passo 6.png"
+            "image": "./Images/7x7 passo 6.png"
           },
           
           {
             "text": "Link para o material de apoio: www.exemplo.com",
-            "image": "./images/7x7 passo 6.png"
+            "image": "./Images/7x7 passo 6.png"
           }
         ]
       },
@@ -108,47 +108,47 @@ document.addEventListener("DOMContentLoaded", () => {
         "pages": [
           {
             "text": "Construção de elipse método das diagonais",
-            "image": "./images/5x2 passo 1.png"
+            "image": "./Images/5x2 passo 1.png"
           },
           {
             "text": "A elipse é uma figura geométrica que se assemelha a uma circunferência, mas que possui dois raios diferentes.",
-            "image": "./images/5x2 passo 1.png"
+            "image": "./Images/5x2 passo 1.png"
           },
           {
             "text": "Passo 1: Encontrar os 04 pontos médios do retângulo, que servirá de referência para a elipse inscrita [Figura 01].",
-            "image": "./images/5x2 passo 1.png"
+            "image": "./Images/5x2 passo 1.png"
           },
           {
             "text": "Passo 2: Calcular R x 0,3 do raio maior [Figura 01].",
-            "image": "./images/5x2 passo 1.png"
+            "image": "./Images/5x2 passo 1.png"
           },
           {
             "text": "Passo 3: Traçar uma reta paralela a partir do ponto de interseção do raio com a lateral do retângulo [Figura 01].",
-            "image": "./images/5x2 passo 1.png"
+            "image": "./Images/5x2 passo 1.png"
           },
           {
             "text": "Passo 4: Marcar o ponto de interseção entre a reta e a diagonal [Figura 01].",
-            "image": "./images/5x2 passo 1.png"
+            "image": "./Images/5x2 passo 1.png"
           },
           {
             "text": "Passo 5: Marcar os 04 pontos nas diagonais [Figura 02].",
-            "image": "./images/5x2 passo 2.png"
+            "image": "./Images/5x2 passo 2.png"
           },
           {
             "text": "Passo 6: Desenhar a ELIPSE passando pelos 8 pontos [04 pontos médios + 04 pontos nas diagonais], utilizando a ferramenta Arco Circuncircular [Figura 03].",
-            "image": "./images/5x2 passo 4.png"
+            "image": "./Images/5x2 passo 4.png"
           },
           {
             "text": "A elipse está pronta!",
-            "image": "./images/5x2 passo 4.png"
+            "image": "./Images/5x2 passo 4.png"
           },
           {
             "text": "Esse método permite construir uma elipse com precisão, utilizando o método das diagonais.",
-            "image": "./images/5x2 passo 4.png"
+            "image": "./Images/5x2 passo 4.png"
           },
           {
             "text": "Link para o material de apoio: www.exemplo.com",
-            "image": "./images/5x2 passo 4.png"
+            "image": "./Images/5x2 passo 4.png"
           }
         ]
       },
@@ -157,47 +157,47 @@ document.addEventListener("DOMContentLoaded", () => {
   "pages": [
     {
       "text": "A elipse é uma figura geométrica que se assemelha a uma circunferência, mas que possui dois raios diferentes.",
-      "image": "./images/5x5 passo 8.png"
+      "image": "./Images/5x5 passo 8.png"
     },
     {
       "text": "Passo 1: Ligar do Ponto A para os pontos 1 e 2 nos quadrantes 1º e 4º.",
-      "image": "./images/5x5 passo 1.png"
+      "image": "./Images/5x5 passo 1.png"
     },
     {
       "text": "Passo 2: Ligar do Ponto B para os pontos 1 e 2 nos quadrantes 2º e 3º.",
-      "image": "./images/5x5 passo 2.png"
+      "image": "./Images/5x5 passo 2.png"
     },
     {
       "text": "Passo 3: Ligar do Ponto A para os pontos 1 e 2 no eixo central.",
-      "image": "./images/5x5 passo 3.png"
+      "image": "./Images/5x5 passo 3.png"
     },
     {
       "text": "Passo 4: Ligar do Ponto B para os pontos 1 e 2 no eixo central.",
-      "image": "./images/5x5 passo 4.png"
+      "image": "./Images/5x5 passo 4.png"
     },
     {
       "text": "Passo 5: Marcar os pontos de interseção entre as linhas para construir a elipse.",
-      "image": "./images/5x5 passo 5.png"
+      "image": "./Images/5x5 passo 5.png"
     },
     {
       "text": "Passo 6: Construir os arcos da elipse, passando pelos pontos médios e pelos pontos encontrados.",
-      "image": "./images/5x5 passo 6.png"
+      "image": "./Images/5x5 passo 6.png"
     },
     {
       "text": "Passo 7: Construir os arcos da elipse passando pelos pontos médios e pontos encontrados.",
-      "image": "./images/5x5 passo 7.png"
+      "image": "./Images/5x5 passo 7.png"
     },
     {
       "text": "A elipse está pronta!",
-      "image": "./images/5x5 passo 8.png"
+      "image": "./Images/5x5 passo 8.png"
     },
     {
       "text": "Esse método permite construir uma elipse com precisão, utilizando um processo geométrico de interseção de pontos.",
-      "image": "./images/5x5 passo 8.png"
+      "image": "./Images/5x5 passo 8.png"
     },
     {
       "text": "Link para o material de apoio: www.exemplo.com",
-      "image": "./images/5x5 passo 8.png"
+      "image": "./Images/5x5 passo 8.png"
     }
   ]
 },
