@@ -251,7 +251,7 @@ body::before {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    overflow-y: hidden;
+    overflow-y: none; /* Hide vertical scrollbar */
 }
 
 .page-image-container {
