@@ -58,10 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "text": "A elipse está pronta!",
             "image": "./Images/5x2 passo 3.png"
           },
-          {
-            "text": "Link para o material de apoio: https://www.geogebra.org/classic/qec98kgv",
-            "image": "./Images/5x2 passo 3.png"
-          },
+          
           {
             "text": "Link para a atividade: https://www.geogebra.org/classic/qec98kgv",
             "image": "./Images/atividade.png"
@@ -101,10 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
             "image": "./Images/7x7 passo 6.png"
           },
           
-          {
-            "text": "Link para o material de apoio: https://www.geogebra.org/classic/mkpbaux2",
-            "image": "./Images/7x7 passo 6.png"
-          },
           {
             "text": "Link para a atividade: https://www.geogebra.org/classic/mkpbaux2",
             "image": "./Images/atividade.png"
@@ -154,10 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "text": "Esse método permite construir uma elipse com precisão, utilizando o método das diagonais.",
             "image": "./Images/5x2 passo 4.png"
           },
-          {
-            "text": "Link para o material de apoio: https://www.geogebra.org/classic/zazxpraw",
-            "image": "./Images/5x2 passo 4.png"
-          },
+          
           {
             "text": "Link para a atividade: https://www.geogebra.org/classic/zazxpraw",
             "image": "./Images/atividade.png"
@@ -207,10 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "text": "Esse método permite construir uma elipse com precisão, utilizando um processo geométrico de interseção de pontos.",
       "image": "./Images/5x5 passo 8.png"
     },
-    {
-      "text": "Link para o material de apoio: https://www.geogebra.org/classic/tq9fqqes",
-      "image": "./Images/5x5 passo 8.png"
-    },
+    
     {
       "text": "Link para a atividade: https://www.geogebra.org/classic/tq9fqqes",
       "image": "./Images/atividade.png"
