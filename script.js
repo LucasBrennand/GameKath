@@ -1,20 +1,207 @@
 document.addEventListener("DOMContentLoaded", () => {
+  let isMusicPlaying = true;
+  const musicToggle = document.getElementById('music-toggle');
+  const backgroundMusic = new Audio('Song.mp3');
+  backgroundMusic.loop = true;
+  backgroundMusic.play();
+
+  musicToggle.addEventListener('click', () => {
+    isMusicPlaying = !isMusicPlaying;
+    if (isMusicPlaying) {
+      backgroundMusic.play();
+      musicToggle.textContent = '🔊';
+      musicToggle.classList.remove('muted');
+    } else {
+      backgroundMusic.pause();
+      musicToggle.textContent = '🔇';
+      musicToggle.classList.add('muted');
+    }
+  });
+
   const studyData = {
-    "9x4": {
-      title: "Como Encontrar a Elipse a Partir do Raio Maior",
-      pages: [
-        "Como Encontrar a Elipse a Partir do Raio Maior.",
-        "A elipse é uma figura geométrica que se assemelha a uma circunferência, mas que possui dois raios diferentes.",
-        "Passo 1: Identifique os quatro pontos médios das laterais do retângulo que servirá como referência para a elipse inscrita.",
-        "Passo 2: Calcule R x 0,3 onde R é o raio maior da elipse.",
-        "Passo 3: Trace uma reta paralela a partir do ponto de interseção do raio com a lateral do retângulo.",
-        "Passo 4: Marque os quatro pontos resultantes nas diagonais do retângulo.",
-        "Passo 5: Desenhe a elipse passando pelos oito pontos encontrados (quatro pontos médios e quatro pontos diagonais), utilizando um compasso.",
-        "A elipse está pronta!",
-        "Link para o material de apoio: www.exemplo.com",
-      ],
+      "9x4": {
+        "title": "Como Encontrar a Elipse a Partir do Raio Maior",
+        "pages": [
+          {
+            "text": "Como Encontrar a Elipse a Partir do Raio Maior.",
+            "image": "images/5x2 passo 1.png"
+          },
+          {
+            "text": "A elipse é uma figura geométrica que se assemelha a uma circunferência, mas que possui dois raios diferentes.",
+            "image": "images/5x2 passo 1.png"
+          },
+          {
+            "text": "Passo 1: Identifique os quatro pontos médios das laterais do retângulo que servirá como referência para a elipse inscrita.",
+            "image": "images/5x2 passo 1.png"
+          },
+          {
+            "text": "Passo 2: Calcule R x 0,3 onde R é o raio maior da elipse.",
+            "image": "images/5x2 passo 1.png"
+          },
+          {
+            "text": "Passo 3: Trace uma reta paralela a partir do ponto de interseção do raio com a lateral do retângulo.",
+            "image": "images/5x2 passo 1.png"
+          },
+          {
+            "text": "Passo 4: Marque o ponto de interseção entre essa reta e a diagonal do retângulo.",
+            "image": "images/5x2 passo 1.png"
+          },
+          {
+            "text": "Passo 5: Marque os quatro pontos resultantes nas diagonais do retângulo.",
+            "image": "images/5x2 passo 2.png"
+          },
+          {
+            "text": "Passo 6: Desenhe a elipse passando pelos oito pontos encontrados (quatro pontos médios e quatro pontos diagonais), utilizando um compasso.",
+            "image": "images/5x2 passo 3.png"
+          },
+          {
+            "text": "A elipse está pronta!",
+            "image": "images/5x2 passo 3.png"
+          },
+          {
+            "text": "Link para o material de apoio: www.exemplo.com",
+            "image": "images/5x2 passo 3.png"
+          }
+        ]
+      },
+      "7x7": {
+        "title": "Como construir um cilindro",
+        "pages": [
+          {
+            "text": "Cilindro é o objeto tridimensional delimitado pela superfície de translação completa de um segmento de reta que se move paralelamente a si mesmo, e se apoia em uma circunferência.",
+            "image": "images/7x7 passo 1.png"
+          },
+          
+          {
+            "text": "Passo 1: Traçar as diagonais e os pontos médios de cada aresta da face.",
+            "image": "images/7x7 passo 1.png"
+          },
+          {
+            "text": "Passo 2: Escolher uma aresta para marcar R x 0,3.",
+            "image": "images/7x7 passo 2.png"
+          },
+          {
+            "text": "Passo 3: Traçar retas paralelas às arestas da face. Achar os pontos de interseção das diagonais.",
+            "image": "images/7x7 passo 3.png"
+          },
+          {
+            "text": "Passo 4: Traçar os arcos para representar a circunferência em perspectiva (elipse).",
+            "image": "images/7x7 passo 4.png"
+          },
+          {
+            "text": "Passo 5: Transpor os pontos da elipse, correspondentes a altura do cilindro, para fechar o sólido.",
+            "image": "images/7x7 passo 5.png"
+          },
+          {
+            "text": "Passo 6: Cilindro em perspectiva cavaleira. Esse método permite construir um cilindro com precisão, utilizando um processo geométrico de interseção de pontos.",
+            "image": "images/7x7 passo 6.png"
+          },
+          
+          {
+            "text": "Link para o material de apoio: www.exemplo.com",
+            "image": "images/7x7 passo 6.png"
+          }
+        ]
+      },
+      "5x2": {
+        "title": "Construção de elipse método das diagonais",
+        "pages": [
+          {
+            "text": "Construção de elipse método das diagonais",
+            "image": "images/5x2 passo 1.png"
+          },
+          {
+            "text": "A elipse é uma figura geométrica que se assemelha a uma circunferência, mas que possui dois raios diferentes.",
+            "image": "images/5x2 passo 1.png"
+          },
+          {
+            "text": "Passo 1: Encontrar os 04 pontos médios do retângulo, que servirá de referência para a elipse inscrita [Figura 01].",
+            "image": "images/5x2 passo 1.png"
+          },
+          {
+            "text": "Passo 2: Calcular R x 0,3 do raio maior [Figura 01].",
+            "image": "images/5x2 passo 1.png"
+          },
+          {
+            "text": "Passo 3: Traçar uma reta paralela a partir do ponto de interseção do raio com a lateral do retângulo [Figura 01].",
+            "image": "images/5x2 passo 1.png"
+          },
+          {
+            "text": "Passo 4: Marcar o ponto de interseção entre a reta e a diagonal [Figura 01].",
+            "image": "images/5x2 passo 1.png"
+          },
+          {
+            "text": "Passo 5: Marcar os 04 pontos nas diagonais [Figura 02].",
+            "image": "images/5x2 passo 2.png"
+          },
+          {
+            "text": "Passo 6: Desenhar a ELIPSE passando pelos 8 pontos [04 pontos médios + 04 pontos nas diagonais], utilizando a ferramenta Arco Circuncircular [Figura 03].",
+            "image": "images/5x2 passo 4.png"
+          },
+          {
+            "text": "A elipse está pronta!",
+            "image": "images/5x2 passo 4.png"
+          },
+          {
+            "text": "Esse método permite construir uma elipse com precisão, utilizando o método das diagonais.",
+            "image": "images/5x2 passo 4.png"
+          },
+          {
+            "text": "Link para o material de apoio: www.exemplo.com",
+            "image": "images/5x2 passo 4.png"
+          }
+        ]
+      },
+    "5x5": {
+  "title": "Como Encontrar a Elipse a Partir do Raio método de N pontos.",
+  "pages": [
+    {
+      "text": "A elipse é uma figura geométrica que se assemelha a uma circunferência, mas que possui dois raios diferentes.",
+      "image": "images/5x5 passo 8.png"
     },
-    "7x7": {
+    {
+      "text": "Passo 1: Ligar do Ponto A para os pontos 1 e 2 nos quadrantes 1º e 4º.",
+      "image": "images/5x5 passo 1.png"
+    },
+    {
+      "text": "Passo 2: Ligar do Ponto B para os pontos 1 e 2 nos quadrantes 2º e 3º.",
+      "image": "images/5x5 passo 2.png"
+    },
+    {
+      "text": "Passo 3: Ligar do Ponto A para os pontos 1 e 2 no eixo central.",
+      "image": "images/5x5 passo 3.png"
+    },
+    {
+      "text": "Passo 4: Ligar do Ponto B para os pontos 1 e 2 no eixo central.",
+      "image": "images/5x5 passo 4.png"
+    },
+    {
+      "text": "Passo 5: Marcar os pontos de interseção entre as linhas para construir a elipse.",
+      "image": "images/5x5 passo 5.png"
+    },
+    {
+      "text": "Passo 6: Construir os arcos da elipse, passando pelos pontos médios e pelos pontos encontrados.",
+      "image": "images/5x5 passo 6.png"
+    },
+    {
+      "text": "Passo 7: Construir os arcos da elipse passando pelos pontos médios e pontos encontrados.",
+      "image": "images/5x5 passo 7.png"
+    },
+    {
+      "text": "A elipse está pronta!",
+      "image": "images/5x5 passo 8.png"
+    },
+    {
+      "text": "Esse método permite construir uma elipse com precisão, utilizando um processo geométrico de interseção de pontos.",
+      "image": "images/5x5 passo 8.png"
+    },
+    {
+      "text": "Link para o material de apoio: www.exemplo.com",
+      "image": "images/5x5 passo 8.png"
+    }
+  ]
+},
+    "4x9": {
       title: "Math: Algebra Basics",
       pages: [
         "Como Encontrar a Elipse a Partir do Raio método de N pontos.",
@@ -30,9 +217,75 @@ document.addEventListener("DOMContentLoaded", () => {
         "Esse método permite construir uma elipse com precisão, utilizando um processo geométrico de interseção de pontos.",
         "Link para o material de apoio: www.exemplo.com",
       ],
-    }
-,
-    // Add the rest of your JSON data here...
+    },
+    "3x3": {
+      title: "Math: Algebra Basics",
+      pages: [
+        "Como Encontrar a Elipse a Partir do Raio método de N pontos.",
+        "A elipse é uma figura geométrica que se assemelha a uma circunferência, mas que possui dois raios diferentes.",
+        "Passo 1: Ligar do Ponto A para os pontos 1 e 2 nos quadrantes 1º e 4º.",
+        "Passo 2: Ligar do Ponto B para os pontos 1 e 2 nos quadrantes 2º e 3º.",
+        "Passo 3: Ligar do Ponto A para os pontos 1 e 2 no eixo central.",
+        "Passo 4:Ligar do Ponto B para os pontos 1 e 2 no eixo central.",
+        "Passo 5: Marcar os pontos de interseção entre as linhas para construir a elipse.",
+        "Passo 6: Construir os arcos da elipse, passando pelos pontos médios e pelos pontos encontrados.",
+        "Passo 7: Construir os arcos da elipse passando pelos pontos médios e pontos encontrados.",
+        "A elipse está pronta!",
+        "Esse método permite construir uma elipse com precisão, utilizando um processo geométrico de interseção de pontos.",
+        "Link para o material de apoio: www.exemplo.com",
+      ],
+    },
+    "2x0": {
+      title: "Math: Algebra Basics",
+      pages: [
+        "Como Encontrar a Elipse a Partir do Raio método de N pontos.",
+        "A elipse é uma figura geométrica que se assemelha a uma circunferência, mas que possui dois raios diferentes.",
+        "Passo 1: Ligar do Ponto A para os pontos 1 e 2 nos quadrantes 1º e 4º.",
+        "Passo 2: Ligar do Ponto B para os pontos 1 e 2 nos quadrantes 2º e 3º.",
+        "Passo 3: Ligar do Ponto A para os pontos 1 e 2 no eixo central.",
+        "Passo 4:Ligar do Ponto B para os pontos 1 e 2 no eixo central.",
+        "Passo 5: Marcar os pontos de interseção entre as linhas para construir a elipse.",
+        "Passo 6: Construir os arcos da elipse, passando pelos pontos médios e pelos pontos encontrados.",
+        "Passo 7: Construir os arcos da elipse passando pelos pontos médios e pontos encontrados.",
+        "A elipse está pronta!",
+        "Esse método permite construir uma elipse com precisão, utilizando um processo geométrico de interseção de pontos.",
+        "Link para o material de apoio: www.exemplo.com",
+      ],
+    },
+    "1x4": {
+      title: "Math: Algebra Basics",
+      pages: [
+        "Como Encontrar a Elipse a Partir do Raio método de N pontos.",
+        "A elipse é uma figura geométrica que se assemelha a uma circunferência, mas que possui dois raios diferentes.",
+        "Passo 1: Ligar do Ponto A para os pontos 1 e 2 nos quadrantes 1º e 4º.",
+        "Passo 2: Ligar do Ponto B para os pontos 1 e 2 nos quadrantes 2º e 3º.",
+        "Passo 3: Ligar do Ponto A para os pontos 1 e 2 no eixo central.",
+        "Passo 4:Ligar do Ponto B para os pontos 1 e 2 no eixo central.",
+        "Passo 5: Marcar os pontos de interseção entre as linhas para construir a elipse.",
+        "Passo 6: Construir os arcos da elipse, passando pelos pontos médios e pelos pontos encontrados.",
+        "Passo 7: Construir os arcos da elipse passando pelos pontos médios e pontos encontrados.",
+        "A elipse está pronta!",
+        "Esse método permite construir uma elipse com precisão, utilizando um processo geométrico de interseção de pontos.",
+        "Link para o material de apoio: www.exemplo.com",
+      ],
+    },
+    "0x8": {
+      title: "Math: Algebra Basics",
+      pages: [
+        "Como Encontrar a Elipse a Partir do Raio método de N pontos.",
+        "A elipse é uma figura geométrica que se assemelha a uma circunferência, mas que possui dois raios diferentes.",
+        "Passo 1: Ligar do Ponto A para os pontos 1 e 2 nos quadrantes 1º e 4º.",
+        "Passo 2: Ligar do Ponto B para os pontos 1 e 2 nos quadrantes 2º e 3º.",
+        "Passo 3: Ligar do Ponto A para os pontos 1 e 2 no eixo central.",
+        "Passo 4:Ligar do Ponto B para os pontos 1 e 2 no eixo central.",
+        "Passo 5: Marcar os pontos de interseção entre as linhas para construir a elipse.",
+        "Passo 6: Construir os arcos da elipse, passando pelos pontos médios e pelos pontos encontrados.",
+        "Passo 7: Construir os arcos da elipse passando pelos pontos médios e pontos encontrados.",
+        "A elipse está pronta!",
+        "Esse método permite construir uma elipse com precisão, utilizando um processo geométrico de interseção de pontos.",
+        "Link para o material de apoio: www.exemplo.com",
+      ],
+    },
   };
 
   const popup = document.getElementById("popup");
@@ -200,97 +453,107 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Handle tile clicks
-function handleTileClick(tile) {
- 
+  function handleTileClick(tile) {
+    // Fetch the study data for the clicked tile
+    const studyKey = `${tile.row}x${tile.col}`;
+    const studyContent = studyData[studyKey];
 
-  // Fetch the study data for the clicked tile
-  const studyKey = `${tile.row}x${tile.col}`;
-  const studyContent = studyData[studyKey];
-
-  if (studyContent) {
-    // Show the popup with the study material
-    showPopup(studyContent);
-  } else {
-    // Show a default message if no study data is available
-    showPopup({
-      title: "No Study Material",
-      pages: ["No content available for this tile."],
-    });
-  }
-
-  // Highlight the path from the starting tile to the clicked tile
-  highlightPathToTile(tile);
-}
-
-  // Show the popup with the study material
-  function showPopup(studyContent) {
-     // Play the click sound
-  const clickSound = new Audio("click.mp3");
-  clickSound.play();
-    // Ensure all elements exist before proceeding
-    if (
-      !popup ||
-      !studyTitle ||
-      !leftArrow ||
-      !rightArrow ||
-      !page1 ||
-      !page2 ||
-      !closePopupButton
-    ) {
-      console.error("Popup elements are not properly initialized.");
-      return;
+    if (studyContent) {
+      // Show the popup with the study material
+      showPopup(studyContent);
+    } else {
+      // Show a default message if no study data is available
+      showPopup({
+        title: "No Study Material",
+        pages: ["No content available for this tile."],
+      });
     }
 
-    let currentPage = 0;
-
-    // Set the title and initial page content
-    studyTitle.textContent = studyContent.title;
-    page1.textContent =
-      studyContent.pages[currentPage] || "Page 1: No content available.";
-    page2.textContent =
-      studyContent.pages[currentPage + 1] || "Page 2: No content available.";
-
-    // Show the popup
-    popup.style.display = "flex";
-
-    // Reset to the first page
-    page1.style.display = "flex";
-    page2.style.display = "none";
-
-    // Handle left arrow click
-    leftArrow.onclick = () => {
-      if (currentPage > 0) {
-        currentPage -= 1;
-        page1.textContent =
-          studyContent.pages[currentPage] || "Page 1: No content available.";
-        page2.textContent =
-          studyContent.pages[currentPage + 1] ||
-          "Page 2: No content available.";
-        page1.style.display = "flex";
-        page2.style.display = "none";
-      }
-    };
-
-    // Handle right arrow click
-    rightArrow.onclick = () => {
-      if (currentPage < studyContent.pages.length) {
-        currentPage += 1;
-        page1.textContent = studyContent.pages[currentPage] || "Page 1: No content available.";
-          if(currentPage + 1 < studyContent.pages.length){
-            page2.textContent = studyContent.pages[currentPage + 1] || "Page 2: No content available.";
-          }
-         
-        page1.style.display = "none";
-        page2.style.display = "flex";
-      }
-    };
-
-    // Handle close button click
-    closePopupButton.onclick = () => {
-      popup.style.display = "none";
-    };
+    // Highlight the path from the starting tile to the clicked tile
+    highlightPathToTile(tile);
   }
 
+  function showPopup(studyContent) {
+    // Play click sound
+    const clickSound = new Audio("click.mp3");
+    clickSound.play();
+
+    // Get DOM elements
+    const popup = document.getElementById("popup");
+    const studyTitle = document.getElementById("study-title");
+    const page1 = document.getElementById("page-1");
+    const page2 = document.getElementById("page-2");
+    const leftArrow = document.getElementById("left-arrow");
+    const rightArrow = document.getElementById("right-arrow");
+    const closeButton = document.getElementById("close-popup");
+
+    // Initialize state
+    let currentAbsoluteIndex = 0; // Tracks absolute position across all pages
+
+    // Set popup title and show
+    studyTitle.textContent = studyContent.title;
+    popup.style.display = "flex";
+
+    // Create page content
+    const createPageContent = (pageElement, pageData) => {
+        pageElement.innerHTML = `
+            <div class="page-image-container">
+                <img class="page-image" src="${pageData.image}" alt="${pageData.text.substring(0, 30)}...">
+            </div>
+            <div class="page-caption">${pageData.text}</div>
+        `;
+    };
+
+    // Update visible page
+    const updatePage = () => {
+        // Clear both pages
+        page1.innerHTML = '';
+        page2.innerHTML = '';
+
+        // Determine which page to show
+        const pageToShow = currentAbsoluteIndex % 2 === 0 ? page1 : page2;
+        const pageToHide = currentAbsoluteIndex % 2 === 0 ? page2 : page1;
+
+        // Load current page
+        if (studyContent.pages[currentAbsoluteIndex]) {
+            createPageContent(pageToShow, studyContent.pages[currentAbsoluteIndex]);
+            pageToShow.style.display = "flex";
+            pageToHide.style.display = "none";
+        }
+    };
+
+    // Navigation handlers
+    leftArrow.onclick = () => {
+        if (currentAbsoluteIndex > 0) {
+            currentAbsoluteIndex--;
+            updatePage();
+        }
+    };
+
+    rightArrow.onclick = () => {
+        if (currentAbsoluteIndex < studyContent.pages.length - 1) {
+            currentAbsoluteIndex++;
+            updatePage();
+        }
+    };
+
+    // Close popup
+    closeButton.onclick = () => {
+        popup.style.display = "none";
+    };
+
+    // Keyboard navigation
+    document.addEventListener("keydown", (e) => {
+        if (popup.style.display === "flex") {
+            if (e.key === "ArrowLeft") leftArrow.click();
+            if (e.key === "ArrowRight") rightArrow.click();
+            if (e.key === "Escape") closeButton.click();
+        }
+    });
+
+    // Initial load
+    updatePage();
+}
   // Highlight the path from the starting tile to the clicked tile
   function highlightPathToTile(tile) {
     const paths = {
@@ -476,6 +739,44 @@ function handleTileClick(tile) {
       highlightPath(path);
     }
   }
+
+
+  function createPageContent(container, pageData) {
+    // Create image container
+    const imgContainer = document.createElement("div");
+    imgContainer.className = "page-image-container";
+    
+    // Create image element
+    const img = document.createElement("img");
+    img.className = "page-image";
+    
+    // Check if pageData is an object (new format) or string (old format)
+    if (typeof pageData === 'object' && pageData.image) {
+        img.src = pageData.image;
+        img.alt = pageData.text || "Study image";
+        
+        // Create caption
+        const caption = document.createElement("div");
+        caption.className = "page-caption";
+        caption.textContent = pageData.text || "";
+        
+        imgContainer.appendChild(img);
+        container.appendChild(imgContainer);
+        container.appendChild(caption);
+    } else {
+        // Fallback for old string format
+        img.src = "images/default-image.png"; // Provide a default image
+        img.alt = "Study image";
+        
+        const textContent = document.createElement("div");
+        textContent.className = "page-text";
+        textContent.textContent = pageData || "No content available";
+        
+        imgContainer.appendChild(img);
+        container.appendChild(imgContainer);
+        container.appendChild(textContent);
+    }
+}
 
   // Highlight the specified path
   function highlightPath(pathToHighlight) {
